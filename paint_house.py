@@ -14,4 +14,6 @@ class Solution:
             dp[i][2] = costs[i][2] + min(dp[i+1][1], dp[i+1][0])
         
         return min(dp[0][0], dp[0][1], dp[0][2])
-        
+    
+# time complexity - O(n)
+# space complexity - O(1)
